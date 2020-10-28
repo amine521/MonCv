@@ -5,7 +5,6 @@ html, button, input, select, textarea {
 html {
     font-size: 1em;
     line-height: 1.4;
-    background-color: #777;
 }
 
 
@@ -22,7 +21,8 @@ header {
 
 ul{
     list-style: none;
-    float: right;
+    float: left;
+
 }
 
 #wrapper {
@@ -36,21 +36,28 @@ h1{
     font-family: vortice-concept, sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: large;
 }
 
 
 #imageprofile{
-    margin-top: 5px;
- 
+    margin-top: 10px;
+    margin-right: 6%;
+    position: absolute;
+    BOX-SHADOW: 0 0 BLACK;
     height: 200px;
     width: 200px;
     float: right;
-    border:  solid 1px;
+    border: solid 1px;
     border-color: #ccc;
-    border-radius: 3px;
-    /* fond blanc ? */
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0,0.2);
     vertical-align: top;
+    right: 0;
+    top: 0;
+    
+    
+ 
 }
 
 
@@ -82,6 +89,7 @@ h1{
     margin-left: 5%;
     border: solid 1px;
     border-radius: 4px;
+    margin-right: 5%;
 }
 
 #formation{
@@ -95,9 +103,12 @@ h1{
 footer{
     margin-top: 30px;
     width: 90%;
+    height: 80px;
     border: solid 1px;
     border-radius: 4px;
     clear:both;
+    width: 90%;
+    margin-left: 5%;
     
 }
 
