@@ -9,9 +9,96 @@ html {
 }
 
 
+header {
+    height: 250px;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: solid 1px;
+    border-radius: 4px;
+}
+
+ul{
+    list-style: none;
+    float: right;
+}
+
 #wrapper {
     max-width: 900px;
     min-width: 320px;
-    /* centrer ? */
+    text-align: center;
 
 }
+
+h1{
+    font-family: vortice-concept, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+#imageprofile{
+    margin-top: 5px;
+ 
+    height: 200px;
+    width: 200px;
+    float: right;
+    border:  solid 1px;
+    border-color: #ccc;
+    border-radius: 3px;
+    /* fond blanc ? */
+    box-shadow: 0 2px 4px rgba(0, 0, 0,0.2);
+    vertical-align: top;
+}
+
+
+
+#presentation {
+    margin-top: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    border: solid 1px;
+    border-radius: 4px;
+    
+}
+
+
+#experiences{
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    border: solid 1px;
+    border-radius: 4px;
+}
+
+#competences{
+    width: 40%;
+    float: right;
+    margin-left: 5%;
+    border: solid 1px;
+    border-radius: 4px;
+}
+
+#formation{
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    border: solid 1px;
+    border-radius: 4px;
+}
+
+footer{
+    margin-top: 30px;
+    width: 90%;
+    border: solid 1px;
+    border-radius: 4px;
+    clear:both;
+    
+}
+
+
