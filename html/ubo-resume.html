@@ -25,18 +25,19 @@
 
 
 <body>
+
+<center>
     <div id="wrapper">
         <header>
             <h1>ZIANI Mohammed Amine</h1>
             <h2>Etudiant Master M2</h2>
             <img id="imageprofile" src="../images/profile.jpg">
             <ul>
-                <li>Âge : </li>
-                <li>adresse : </li>
-                <li>Nationnalité : </li>
-                <li>Email : </li>
-                <li>Téléphone : </li>
-                <li>Linkedin : </li>
+                <li>Âge : 28 </li>
+                <li>adresse : Cité u Kergoat F121 Brest </li>
+                <li>Email : ziani2971@gmail.com </li>
+                <li>Téléphone : 06******** </li>
+                <li>Linkedin : ************ </li>
             </ul>
         </header>
         <section id="presentation">
@@ -50,38 +51,119 @@
 
         <section id="experiences">
             <h2>Expériences professionnelles</h2>
-            <dl>
-                <dt>stage1</dt>
-                <dd>############ <button>+</button></dd>
-                <dt>stage2</dt>
-                <dd>############ <button>+</button></dd>
+            <button onclick="funA('parg1'); funH('d2','d3');">+</button>gestion des stagiaires PHP/MYSQL
+                <div id="d1">
+                    <p id="parg1">hadiobapiofbmjbfkljmaezkmgKZMDJBFKJDBMFdbjfmkQJF</p>
+                </div>
+            <button onclick="funA('parg2'); funH('d1','d3');">+</button>gestion des modules JEE/JSF
+               <div id="d2">
+                   <p id="parg2">hadiobapiofbmjbfkljmaezkmgKZMDJBFKJDBMFdbjfmkQJF</p>
+               </div> </br>
+            <button onclick="funA('parg3'); funH('d1','d2');">+</button> Simulation moteur de recherche JEE/SOLR>
+                <div id="d3">
+                <p id="parg3">hadiobapiofbmjbfkljmaezkmgKZMDJBFKJDBMFdbjfmkQJF</p>
+                </div>
 
-            </dl>
 
         </section>
         <section id="competences">
             <h2>Compétences</h2>
-            <dl>
-                <dt>JAVA</dt>
-                <dd>############</dd>
-                <dt>JEE</dt>
-                <dd>############</dd>
+            <script>
+                var tab=['JAVA','JEE','JSF','GIT','ANGULAR','SPRING'];
+                var table=[6,4,3,1,1,1,1];
+                for( var i=0;i< tab.length;i++){
+                    document.write("<div class=\"tooltip\">"+tab[i]);
+                    for( j=0;j<table[i];j++){
 
-            </dl>
+                        document.write(" <span class='material-icons' style='color: black'><big>★</big> </span>");
+                        document.write("<span class=\"tooltiptext\">");
+                        if(tab[i]=="JAVA"){
+                            document.write("Niveau avancé");
+                        }
+                        if(tab[i]=="JEE"){
+                            document.write("bon niveau ");
+                        }
+                        if (tab[i] == "JSF" ){
+                            document.write("niveau moyen ");
+                        }
+                         if(tab[i] == "GIT" || tab[i] == "ANGULAR" ||tab[i] == "SPRING" )
+                       {
+                            document.write("Débutant");
+                        }
+
+                        document.write("</span>");
+
+                    }
+                    document.write("</div></br>");
+                }
+            </script>
         </section>
 
         <section id="formation">
             <h2>Formation</h2>
-            <dl>
-                <dt>bac</dt>
-                <dd>############ <button>+</button></dd>
-                <dt>licence</dt>
-                <dd>############ <button>+</button></dd>
 
-            </dl>
+                bac
+            <button onclick="funA('par1'); funH('dd2');">+</button>############</br>
+            <div id="dd1">
+                <p id="par1">hadiobapiofbmjbfkljmaezkmgKZMDJBFKJDBMFdbjfmkQJF</p>
+            </div>
+                licence
+                <button  onclick="funA('par2'); funH('dd1');">+</button>############
+            <div id="dd2">
+                <p id="par2">hadiobapiofbmjbfkljmaezkmgKZMDJBFKJDBMFdbjfmkQJF</p>
+            </div>
+
+
         </section>
 
-        <em class="fa-camera-retro"></em>
+
+
+        <section id="langues" >
+            <h2>Langues</h2>
+                <script>
+                    var tab=['Arabe','Français','Anglais'];
+                    var table=[5,4,3];
+                    for( var i=0;i< table.length;i++){
+                        document.write("<div class=\"tooltip\">"+tab[i]);
+                        for( j=0;j<table[i];j++){
+
+                            document.write(" <span class='material-icons' style='color: black'><big>★</big> </span>");
+                            document.write("<span class=\"tooltiptext\">");
+                            if(tab[i]=="Arabe"){
+                                document.write("Langue maternelle");
+                            }
+                            if(tab[i]=="Français"){
+                                document.write("bon niveau avec un DALF C1");
+                            }
+                            if(tab[i]=="Anglais"){
+                                document.write("Bon niveau");
+                            }
+
+                            document.write("</span>");
+           }
+                        document.write("</div></br>");
+                    }
+                </script>
+            <div class="cont" style="display: flex;">
+                <div class="vl" style="margin-right:4px ;"></div>
+                <div class="vll" style="display: flex; " >
+
+                    <script>
+                        for( var i=0;i< table.length;i++){
+                            document.write("<div style='width:5vw;margin-right:1vw'>");
+                            for( j=0;j<table[i];j++){
+
+                                document.write("<div class='caro' style='width: 5vw;height: 5vw; background-color: black ;' ></div>");
+                            }
+                            document.write("<p style='font-size:1.5vw;transform:rotate(180deg);'>"+tab[i]+"</p></div>");
+                        }
+
+                    </script>
+                </div>
+            </div>
+            <div class="vl2"></div>
+        </section>
+
 
         <footer>
             <ul>
@@ -93,7 +175,34 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam iusto cumque asperiores .</p>
         
         </footer>
-        </div>
+        </section>
+
+
+
+</center>
+
+    <script>
+
+        function funA(c) {
+            if(document.getElementById(c).style.display =="block"){
+                document.getElementById(c).style.display ="none";
+            }else{
+                document.getElementById(c).style.display ="block";
+            }
+        }
+        function funH(c1,c2) {
+            document.getElementById(c1).style.display ="none";
+            document.getElementById(c2).style.display ="none";
+
+        }
+        function funH(c1) {
+            document.getElementById(c1).style.display ="none";
+
+
+        }
+    </script>
+
+
 </body>
 
 

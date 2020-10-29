@@ -6,7 +6,10 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
+body{
+    background-color: bisque;
 
+}
 
 header {
     height: 250px;
@@ -27,6 +30,7 @@ ul{
 }
 
 #wrapper {
+
     max-width: 900px;
     min-width: 320px;
     text-align: center;
@@ -42,7 +46,7 @@ h1{
 
 
 #imageprofile{
-    margin-right: 37%;
+    margin-right: 20%;
     margin-top: 60px;
     position: absolute;
     height: 180px;
@@ -59,7 +63,20 @@ h1{
 
 
 }
+#parg1,#parg2,#parg3,#par1,#par2{
+    display:none;
+}
 
+dl{
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+dd , dt{
+    display: inline-block;
+    float: left;
+}
 
 
 #presentation {
@@ -104,6 +121,17 @@ h1{
     margin-bottom: 30px;
 }
 
+#langues{
+    margin-top: 30px;
+    width: 40%;
+    float: right;
+    margin-left: 5%;
+    border: solid 1px;
+    border-radius: 4px;
+    margin-right: 5%;
+    margin-bottom: 30px;
+}
+
 
 
 footer{
@@ -116,4 +144,59 @@ footer{
     
 }
 
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    font-size: 15px;
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(31, 29, 29) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.vl {
+    border-left: 6px solid  bisque;
+    height: 25vw;
+    margin-left: 1vw;
+}
+.vl2 {
+    border-bottom: 6px solid bisque;
+    width: 23vw;
+    margin-left: 1vw;
+
+}
+.vll{
+    transform: rotate(180deg);
+}
 
