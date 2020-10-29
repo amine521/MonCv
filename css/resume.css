@@ -20,6 +20,7 @@ header {
 }
 
 ul{
+    margin-top: inherit;
     list-style: none;
     float: left;
 
@@ -41,12 +42,11 @@ h1{
 
 
 #imageprofile{
-    margin-top: 10px;
-    margin-right: 6%;
+    margin-right: 37%;
+    margin-top: 60px;
     position: absolute;
-    BOX-SHADOW: 0 0 BLACK;
-    height: 200px;
-    width: 200px;
+    height: 180px;
+    width: 180px;
     float: right;
     border: solid 1px;
     border-color: #ccc;
@@ -55,9 +55,9 @@ h1{
     vertical-align: top;
     right: 0;
     top: 0;
-    
-    
- 
+
+
+
 }
 
 
@@ -76,6 +76,7 @@ h1{
 
 
 #experiences{
+    margin-top: 30px;
     width: 40%;
     float: left;
     margin-left: 5%;
@@ -84,6 +85,7 @@ h1{
 }
 
 #competences{
+    margin-top: 30px;
     width: 40%;
     float: right;
     margin-left: 5%;
@@ -93,21 +95,23 @@ h1{
 }
 
 #formation{
+    margin-top: 30px;
     width: 40%;
     float: left;
     margin-left: 5%;
     border: solid 1px;
     border-radius: 4px;
+    margin-bottom: 30px;
 }
 
+
+
 footer{
-    margin-top: 30px;
     width: 90%;
     height: 80px;
     border: solid 1px;
     border-radius: 4px;
     clear:both;
-    width: 90%;
     margin-left: 5%;
     
 }
